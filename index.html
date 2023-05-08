@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link bootstrap>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    
+    <header class="cabecera">
+        <button class="cabecera__boton" onclick="mostrarMenuPagina()">Mostrar Menu</button>
+        <div class="cabecera__contenedorLista">
+            <ul class="cabecera__lista">
+                <li class="cabecera__lista__elemento">Página Principal |</li>
+                <li class="cabecera__lista__elemento">Preguntas Frecuentes |</li>
+                <li class="cabecera__lista__elemento">Manuales y Tutoriales |</li>
+                <li class="cabecera__lista__elemento">Noticias |</li>
+                <li class="cabecera__lista__elemento">Calendario |</li>
+                <li class="cabecera__lista__elemento">Administracion de perfil |</li>
+                <li class="cabecera__lista__elemento">Organigrama |</li>
+                <li class="cabecera__lista__elemento">Chat</li>
+            </ul>
+
+        </div>
+
+    </header>
+    <main class="principal">
+        <aside class="principal__izquierda">
+            <article class="principal__izquierda__buscador">
+                <form action="" method="">
+                    <input type="text" id="txtbusqueda" name="txtbusqueda" size="16"><input type="button" value="buscar">
+                </form>
+            </article>
+
+            <article class="principal__izquierda__mostrarChats">
+                <form action="" method="">
+                    <input class="principal__izquierda__mostrarChats__boton" type="button" value="mostrar chats" onclick="mostrarContenedoresChat()">
+                </form>
+            </article>
+
+            <article class="principal__izquierda__chat">
+                <aside class="principal__izquierda__contenedortextoIzquierda">
+                    <figure class="principal__izquierda__contenedorimagen">
+                        <img class="principal__izquierda__contenedorimagen__contenido" src="assets/img/baryonyx.jpg" alt="hisoka">
+                    </figure>
+                </aside>
+
+                <aside class="principal__izquierda__contenedortextoDerecha">
+                    <p>Baryonyx <span class="principal__izquierda__fecha"> 06 May 2023</span></p>
+                </aside>
+            </article>
+            
+            
+            
+            
+            
+            <article class="principal__izquierda__chat">
+                <aside class="principal__izquierda__contenedortextoIzquierda">
+                    <figure class="principal__izquierda__contenedorimagen">
+                        <img class="principal__izquierda__contenedorimagen__contenido" src="assets/img/parasaurolophus.jpg" alt="hisoka">
+                    </figure>
+                </aside>
+
+                <aside class="principal__izquierda__contenedortextoDerecha">
+                    <p>Parasauro <span class="principal__izquierda__fecha"> 24 Abr 2023</span></p>
+                </aside>
+            </article>
+
+            <article class="principal__izquierda__chat">
+                <aside class="principal__izquierda__contenedortextoIzquierda">
+                    <figure class="principal__izquierda__contenedorimagen">
+                        <img class="principal__izquierda__contenedorimagen__contenido" src="assets/img/giganotosaurio.jpg" alt="hisoka">
+                    </figure>
+                </aside>
+
+                <aside class="principal__izquierda__contenedortextoDerecha">
+                    <p>Giganoto <span class="principal__izquierda__fecha"> 22 Abr 2023</span></p>
+                </aside>
+            </article>
+
+            <article class="principal__izquierda__chat">
+                <aside class="principal__izquierda__contenedortextoIzquierda">
+                    <figure class="principal__izquierda__contenedorimagen">
+                        <img class="principal__izquierda__contenedorimagen__contenido" src="assets/img/Pterodactyl.jpg" alt="hisoka">
+                    </figure>
+                </aside>
+
+                <aside class="principal__izquierda__contenedortextoDerecha">
+                    <p>Pterodactyl <span class="principal__izquierda__fecha"> 19 Abr 2023</span></p>
+                </aside>
+            </article>
+
+            <article class="principal__izquierda__chat">
+                <aside class="principal__izquierda__contenedortextoIzquierda">
+                    <figure class="principal__izquierda__contenedorimagen">
+                        <img class="principal__izquierda__contenedorimagen__contenido" src="assets/img/spinosaurio.jpg" alt="hisoka">
+                    </figure>
+                </aside>
+
+                <aside class="principal__izquierda__contenedortextoDerecha">
+                    <p>Spinosaurio <span class="principal__izquierda__fecha"> 18 Abr 2023</span></p>
+                </aside>
+            </article>
+
+            <article class="principal__izquierda__chat">
+                <aside class="principal__izquierda__contenedortextoIzquierda">
+                    <figure class="principal__izquierda__contenedorimagen">
+                        <img class="principal__izquierda__contenedorimagen__contenido" src="assets/img/tiranosaurio.jpg" alt="hisoka">
+                    </figure>
+                </aside>
+
+                <aside class="principal__izquierda__contenedortextoDerecha">
+                    <p>Tiranosaurio <span class="principal__izquierda__fecha"> 07 Abr 2023</span></p>
+                </aside>
+            </article>
+
+        </aside>
+        <section class="principal__derecha">
+            <p>Soy un dinosaurio y me llamo Anacleto
+                Por cosas del destino no morí en la glaciación
+                Mis amigos se extinguieron me dejaron solo
+                Y tuve que resignarme a esta situación
+                Me aburria mucho porque no tenia parientes
+                Nadie conocido con quien salir a jugar
+                Tuve que inventarme amigos para entretenerme
+                Sentarme frente a un espejo para conversar
+                Pero una mañana decidí cambiar mi suerte
+                Y mande un proyecto para la televisión
+                Se trataba de un programa para la familia
+                Con cantantes y concursos mucha diversión
+                El gerente del canal me llama a su oficina
+                Le encanto el programa y me dijo hagámoslo
+                Firmamos contrato y en un par de meses
+                Yo me convertí en figura de televisión
+                Conocí a las estrellas de las portadas
+                Uh uh uh
+                Sumergido en la fama y en el placer
+                Uh uh uh
+                Me compre autos caros, una casa en la playa
+                Pero no fui feliz
+                Pero no fui feliz
+                No fui feliz</p>
+            <p>Triceratops; ¡que menú más práctico! tiene mucha carne y además viene con mondadientes</p>
+            <p>Si puedes verlo puedes comerlo</p>
+            <p>¡Rawr!</p>
+            <p>Todas tus selfies son sólo primeros planos de tu nariz</p>
+            <p>Sigo pensando que necesitamos un programa espacial</p>
+            <p>Mira al cielo, hay una enorme estrella fugaz. Pidamos que ocurra un gran cambio en nuestras aburridas vidas</p>
+
+
+            <button class="principal__derecha__boton" onclick="cambiarFuenteCursiva()">Cambiar la Fuente a Cursiva</button>
+            <button class="principal__derecha__boton" onclick="cambiarFuenteOrbitron()" disabled>Cambiar la Fuente a Orbitron</button>
+
+        </section>
+    </main>
+    <footer class="pie">
+        <p class="pie__parrafo">Este es el pie</p>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

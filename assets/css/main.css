@@ -1,0 +1,211 @@
+/* abstracts*/
+/*vendors*
+/*base*/
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: normal;
+  src: local("?"), url("../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
+/*layout*/
+.cabecera {
+  text-align: center;
+  color: white;
+}
+
+.cabecera__boton {
+  display: none;
+}
+
+.cabecera__contenedorLista {
+  display: block;
+}
+
+.cabecera__contenedorLista--noMostrar {
+  display: none;
+}
+
+.cabecera__lista {
+  display: inline-block;
+}
+
+.cabecera__lista__elemento {
+  display: inherit;
+}
+
+.principal {
+  display: inline-block;
+  width: 100%;
+}
+
+.principal__izquierda {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,81,121,1) 35%, rgba(0,212,255,1) 100%);
+  width: 25%;
+  display: inherit;
+  border-radius: 12px;
+}
+
+.principal__izquierda__buscador {
+  
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,58,121,1) 35%, rgba(0,212,255,1) 100%);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 12px;
+}
+
+.principal__izquierda__mostrarChats {
+  display: none;
+}
+
+.principal__izquierda__chat {
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: inline-block;
+  height: 240px;
+}
+
+.principal__izquierda__fecha {
+  font-size: 11.5px;
+  color: #0BEEF5;
+}
+
+.principal__izquierda__imagen {
+  width: 100%;
+}
+
+.principal__izquierda__contenedorimagen {
+  width: 100%;
+  text-align: left;
+}
+
+.principal__izquierda__contenedortextoDerecha {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,38,121,1) 35%, rgba(0,212,255,1) 100%);
+  display: inherit;
+  width: 27%;
+  border-radius: 12px;
+}
+
+.principal__izquierda__contenedortextoIzquierda {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  display: inherit;
+  width: 70%;
+  border-radius: 12px;
+}
+
+.principal__izquierda__contenedorimagen__contenido {
+  position: static;
+  width: 80%;
+  border-radius: 100%;
+  height: 100px;
+}
+
+.principal__derecha {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,60,121,1) 35%, rgba(0,212,255,1) 100%);
+  width: 72%;
+  display: inherit;
+  font-family: "Orbitron", sans-serif;
+  font-size: 36px;
+  color: white;
+  border-radius: 12px;
+}
+
+.principal__derecha--cursiva {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,28,121,1) 35%, rgba(0,212,255,1) 100%);
+  width: 72%;
+  display: inherit;
+  font-family: "Dancing Script", cursive;
+  font-size: 44px;
+  color: white;
+  border-radius: 12px;
+}
+
+.cabecera {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.pie {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.pie__parrafo {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+/*components*/
+.principal__izquierda__mostrarChats__boton {
+  position: absolute;
+  top: 30px;
+}
+
+/*pages*/
+/*themes*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+  .cabecera__boton {
+    display: block;
+    position: relative;
+    left: 75%;
+  }
+  .cabecera__contenedorLista {
+    display: none;
+  }
+  .cabecera__lista {
+    display: block;
+  }
+  .cabecera__lista__elemento {
+    display: inherit;
+  }
+  .principal__izquierda__contenedortextoDerecha {
+    display: none;
+  }
+  .principal__izquierda__contenedortextoIzquierda {
+    width: 100%;
+    display: none;
+  }
+  .principal__izquierda__buscador {
+    display: none;
+  }
+  .principal__izquierda__mostrarChats {
+    display: block;
+  }
+  .principal__derecha {
+    font-size: 11.5px;
+  }
+  .principal__derecha--cursiva {
+    font-size: 14.5px;
+  }
+  .principal__izquierda__contenedorimagen__contenido {
+    position: relative;
+    right: 40%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cabecera__contenedorLista {
+    display: block;
+  }
+  .principal__izquierda__contenedortextoIzquierda {
+    display: inherit;
+  }
+  .cabecera {
+    background-color: red;
+  }
+}
+
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,17,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+/*# sourceMappingURL=main.css.map */
